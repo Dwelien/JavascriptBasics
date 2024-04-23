@@ -63,16 +63,54 @@
 - multiline: /*...*/
 # JavaScript Variables
 - var, let, const
+- identified with unique names : identifieIrs
 - 
 # JavaScript Let
-
+- variables with block  scope
+- must be declared before use
+- Global scope: declared with var
+- var can't have block scope
+- 
 # JavaScript Const
-
+- cannot be redeclared
 # JavaScript Operators
+- =, +, *, >
+- Arithmetic
+- Assignment
+- Comparison
+- String
+- Logical
+- Bitwise
+- Ternary
+- Type
+  
 
 # JavaScript Arithmetic
-
+- perfomr mathematical caluculations on numbers
+- +, -, *, **,  /, %, ++, --
+- operators and operands
+-  result of modulo operation = remainder
+-  ** = Math.pow(x,2);
 # JavaScript Assignment
+- =
+- +=
+- -=
+- *=
+- **=
+- /=
+- %=
+- <<=
+- >>=
+- >>>=
+- &=
+- |=
+- ^=
+- &&=
+- ||=
+- 
+
+
+  
 
 # JavaScript Data Types
 
