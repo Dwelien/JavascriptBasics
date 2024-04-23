@@ -34,17 +34,36 @@
 - Example: Button click reveals hidden element
   
 # JavaScript Where To 
-
+- <script></script>
+- to insert JavaScript code in HTML
+  - function : (called for)
+  - event
+  - external javascript :separates HTML annd code. easy to  read and  maintain. speed up page  loads
+  - 
+    
 # JavaScript Output
-
+- innerHTMl
+- documnet.write()
+- window.alert()
+- console.log()
+- only in the browser: window.print()
+  
+  
 # JavaScript Statements
-
+- values, operators, expresssions, keywords, comments
+- semicolon
+- Keywords: var, let, const, if, switch, for, function, return, try
+- 
 # JavaScript Syntax
+- fixed values - Literals
+- variable values - Variables
 
 # JavaScript Comments
-
+- single line: //
+- multiline: /*...*/
 # JavaScript Variables
-
+- var, let, const
+- 
 # JavaScript Let
 
 # JavaScript Const
