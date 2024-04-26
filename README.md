@@ -456,31 +456,184 @@ Fri Apr 26 2024 02:15:23 GMT-0400 (Eastern Daylight Time)
 - Comparing two JavaScript objects always return false.
 - 
 # JavaScript Comparison and Logical Operators
+- Comparison and Logical operators are used to test for true or false.
+- Comparison operators are used in logical statements to determine equality or difference between variables or values.
+- ==	equal to
+- ===	equal value and equal type
+- !=	not equal
+- !==	not equal
+- 	>	greater than
+- <	less than
+- >=	greater than or equal to	
+<=	less than or equal to
+- Comparison operators can be used in conditional statements to compare values and take action depending on the result
+- Logical operators are used to determine the logic between variables or values
+- The ?? operator returns the first argument if it is not nullish (null or undefined).
+- The ?. operator returns undefined if an object is undefined or null (instead of throwing an error).
 - 
 # JavaScript if, else, and else if
-
+- Conditional statements are used to perform different actions based on different conditions.
+- Use if to specify a block of code to be executed, if a specified condition is true
+- Use else to specify a block of code to be executed, if the same condition is false
+- Use else if to specify a new condition to test, if the first condition is false
+- Use switch to specify many alternative blocks of code to be executed
+- 
 # JavaScript Switch Statement
-
+- The switch statement is used to perform different actions based on different conditions.
+- Use the switch statement to select one of many code blocks to be executed.
+- The switch expression is evaluated once.
+- The value of the expression is compared with the values of each case.
+- If there is a match, the associated block of code is executed.
+- If there is no match, the default code block is executed.
+- When JavaScript reaches a break keyword, it breaks out of the switch block.
+- The default keyword specifies the code to run if there is no case match
+- If multiple cases matches a case value, the first case is selected.
+- If no matching cases are found, the program continues to the default label.
+- If no default label is found, the program continues to the statement(s) after the switch.
+-   
 # JavaScript For Loop
-
+- Loops can execute a block of code a number of times
+- The for statement creates a loop with 3 optional expressions:
+for (expression 1; expression 2; expression 3) {
+  // code block to be executed
+}
+Expression 1 is executed (one time) before the execution of the code block.
+Expression 2 defines the condition for executing the code block.
+- expression 1 to initialize the variable used in the loop (let i = 0)
+- expression 2 is used to evaluate the condition of the initial variable
+- expression 3 increments the value of the initial variable
+- using var, the variable declared in the loop redeclares the variable outside the loop.
+- using let, the variable declared in the loop does not redeclare the variable outside the loop.
+Expression 3 is executed (every time) after the code block has been executed.
 # JavaScript For In
-
+- The JavaScript for in statement loops through the properties of an Object
+- The JavaScript for in statement can also loop over the properties of an Array
+- he forEach() method calls a function (a callback function) once for each array element
+- 
 # JavaScript For Of
-
+-  JavaScript for of statement loops through the values of an iterable object.
+-  
 # JavaScript While Loop
-
+-  JavaScript for of statement loops through the values of an iterable object.
+-  The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
 # JavaScript Break and Continue
-
+- The break statement "jumps out" of a loop.
+- The continue statement "jumps over" one iteration in the loop.
+- The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+- The break and the continue statements are the only JavaScript statements that can "jump out of" a code block.
+- The continue statement (with or without a label reference) can only be used to skip one loop iteration.
+- The break statement, without a label reference, can only be used to jump out of a loop or a switch.
+- With a label reference, the break statement can be used to jump out of any code block
 # JavaScript Iterables
+- The JavaScript for..of statement loops through the elements of an iterable object.
+- means looping over a sequence of elements.
+- use a for..of loop to iterate over the elements of a string
+- use a for..of loop to iterate over the elements of an Array
+- use a for..of loop to iterate over the elements of a Set
+- The iterator protocol defines how to produce a sequence of values from an object.
+- An object becomes an iterator when it implements a next() method
+- The next() method must return an object with two properties:
+- value (the next value)
+- done (true or false)
+- The iterator protocol defines how to produce a sequence of values from an object.
+- An object becomes an iterator when it implements a next() method.
+- The next() method must return an object with two properties:
+- value (the next value)
+- done (true or false)
+- A JavaScript iterable is an object that has a Symbol.iterator.
+- The Symbol.iterator is a function that returns a next() function.
+- An iterable can be iterated over with the code: for (const x of iterable) { }
+- The Symbol.iterator method is called automatically by for..of.
+
+- 
 
 # JavaScript Sets
+- A JavaScript Set is a collection of unique values.
+- Each value can only occur once in a Set.
+- How to Create a Set
+- Passing an Array to new Set()
+- Create a new Set and use add() to add values
+- Create a new Set and use add() to add variables
+- Pass an Array to the new Set() constructor
 
+- new Set()	Creates a new Set
+- add()	Adds a new element to the Set
+- delete()	Removes an element from a Set
+- has()	Returns true if a value exists
+- clear()	Removes all elements from a Set
+- forEach()	Invokes a callback for each element
+- values()	Returns an Iterator with all the values in a Set
+- keys()	Same as values()
+- entries()	Returns an Iterator with the [value,value] pairs from a Set
+- 
 # JavaScript Maps
+- Passing an Array to new Map()
+- Create a Map and use Map.set()
+- The set() method can also be used to change existing Map values
+- The get() method gets the value of a key in a Ma
+- The size property returns the number of elements in a Map
+- The delete() method removes a Map element
+- The clear() method removes all the elements from a Map
+- The has() method returns true if a key exists in a Map
+- The forEach() method invokes a callback for each key/value pair in a Map
+- The entries() method returns an iterator object with the [key,values] in a Map
+- The keys() method returns an iterator object with the keys in a Map
+- The values() method returns an iterator object with the values in a Map
+- A primitive data value is a single simple data value with no additional properties and methods.
 
 # JavaScript typeof
+- Datatypes: Object
+Date
+Array
+String
+Number
+Boolean
+- 2 data types that cannot contain values:
+null
+undefined
+- In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
+- The typeof operator can return one of these primitive types:
+string
+number
+boolean
+undefined
+- Complex Data
+The typeof operator can return one of two complex types:
+function
+object
+The typeof operator returns "object" for objects, arrays, and null.
+The typeof operator does not return "object" for functions.
+- The typeofoperator is not a variable. It is an operator. Operators ( + - * / ) do not have any data type.
+- The constructor property returns the constructor function for all JavaScript variables.
+- An empty value has nothing to do with undefined.
+- An empty string has both a legal value and a type
+- undefined and null are equal in value but different in type
+- The instanceof operator returns true if an object is an instance of the specified object
+- The void operator evaluates an expression and returns undefined.
+- 
 
 # JavaScript Type Conversion
-
+- By the use of a JavaScript function
+Automatically by JavaScript itself
+- Converting Strings to Numbers: global method Number() converts a variable (or a value) into a number.
+  - Number()	Returns a number, converted from its argument
+parseFloat()	Parses a string and returns a floating point number
+parseInt()	Parses a string and returns an integer
+- Converting Numbers to Strings: The unary + operator can be used to convert a variable to a number
+- Converting Dates to Numbers: global method String() can convert numbers to strings.
+It can be used on any type of numbers, literals, variables, or expressions
+The Number method toString() does the same.
+toExponential():	Returns a string, with a number rounded and written using exponential notation.
+toFixed():	Returns a string, with a number rounded and written with a specified number of decimals.
+toPrecision(): Returns a string, with a number written with a specified length
+The global method Number() can be used to convert dates to numbers.
+The global method String() can convert dates to strings.
+- Converting Numbers to Dates: 
+- Converting Booleans to Numbers:
+- The global method Number() can also convert booleans to numbers.
+- The global method String() can convert booleans to strings.
+- Converting Numbers to Booleans:
+- JavaScript automatically calls the variable's toString() function when you try to "output" an object or a variable
 # JavaScript Bitwise Operations
 
 # JavaScript Regular Expressions
