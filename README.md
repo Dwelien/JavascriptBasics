@@ -143,17 +143,69 @@
 - const objectName = {property1: value1, property2: value2, property3: value3, property4: value4 .....}
 - objectName.property1
 - objectName[property1]
-- 
+- objects can have methods. methoods are actions that can be performed on objects.
+- stored in properties as function definitions.
+- method is a function stored as a property.
+
+  - this refers to the current object
+  - 
 # JavaScript Events
-
+- things that happen to HTML elements
+- JavaScript lets you execute code when events are detected.
+-
 # JavaScript Strings
-
+- for storing text
+- written with quotes
+- Template quotes `"strings"`
+- text.length = to find length of the string
+  - Escape sequences
+    - \b - Backspace
+    - \f - Form feed
+    - \n - new line
+    - \r - carriage return
+    - \t - horizontal tabulator
+    - \v -vertical tabulator
+    
+- to make a string to object : use the keyword new
+- == : conditional opperator. to check if  condition is true
+- === : strict. returns true only if datatype and value is equal
+  
 # JavaScript String Methods
-
+- text.length
+- text.charAt(0)
+- text.charCodeAt(0)
+- name.at(2)
+- at() method returns the character at a specified index (position) in a string.
+- at() method is a new addition to JavaScript.
+- It allows the use of negative indexes while charAt() do not.
+- slice() extracts a part of a string and returns the extracted part in a new string.
+- - substring() is similar to slice().
+- The difference is that start and end values less than 0 are treated as 0 in substring().
+- substr() is similar to slice().
+- The difference is that the second parameter specifies the length of the extracted part.
+- A string is converted to upper case with toUpperCase()
+- A string is converted to lower case with toLowerCase()
+- concat() joins two or more strings
+- The concat() method can be used instead of the plus operator. These two lines do the same
+- The trim() method removes whitespace from both sides of a string
+- The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+- The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+- he padStart() method pads a string from the start.
+- It pads a string with another string (multiple times) until it reaches a given length.
+- The padEnd() method pads a string from the end.
+- It pads a string with another string (multiple times) until it reaches a given length.
+- The repeat() method returns a string with a number of copies of a string.
+- The repeat() method returns a new string.
+- The repeat() method does not change the original string.
+- The replace() method replaces a specified value with another value in a string
+- The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+- If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+- A string can be converted to an array with the split() method
+- 
 # JavaScript String Search
 
 # JavaScript Template Strings
-
+- 
 # JavaScript Numbers
 
 # JavaScript BigInt
