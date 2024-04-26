@@ -203,16 +203,53 @@
 - A string can be converted to an array with the split() method
 - 
 # JavaScript String Search
-
+ -  String indexOf()
+ -  String lastIndexOf()
+ -  String search()
+ -  The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found
+ -  The lastIndexOf() method returns the index of the last occurrence of a specified text in a string
+ -  The search() method searches a string for a string (or a regular expression) and returns the position of the match
+ -  The search() method cannot take a second start position argument.
+ -  The indexOf() method cannot take powerful search values (regular expressions)
+ -  The match() method returns an array containing the results of matching a string against a string (or a regular expression)
+ -  The matchAll() method returns an iterator containing the results of matching a string against a string (or a regular expression)
+ -  The includes() method returns true if a string contains a specified value.
+ -  The startsWith() method returns true if a string begins with a specified value.
+ -  The endsWith() method returns true if a string ends with a specified value.
+ -  
 # JavaScript Template Strings
+- Template Strings use back-ticks (``) rather than the quotes ("") to define a string
+- Template Strings allow both single and double quotes inside a string
+- Automatic replacing of expressions with real values is called string interpolation.
+- Template Strings allow variables in strings
+- Template Strings allow expressions in strings
 - 
 # JavaScript Numbers
-
+- JavaScript has only one type of number. Numbers can be written with or without decimals.
+- NaN is a JavaScript reserved word indicating that a number is not a legal number.Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number)
+- Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+- JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+- 
 # JavaScript BigInt
-
+- JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number.
+- The JavaScript typeof a BigInt is "bigint"
+- 
 # JavaScript Number Methods
-
+These number methods can be used on all JavaScript numbers:
+toString():	Returns a number as a string
+toExponential():	Returns a number written in exponential notation
+toFixed():	Returns a number written with a number of decimals
+toPrecision():	Returns a number written with a specified length
+valueOf():	Returns a number as a number
 # JavaScript Number Properties
+- EPSILON:	The difference between 1 and the smallest number > 1.
+- MAX_VALUE:	The largest number possible in JavaScript
+- MIN_VALUE:	The smallest number possible in JavaScript
+- MAX_SAFE_INTEGER:	The maximum safe integer (253 - 1)
+- MIN_SAFE_INTEGER:	The minimum safe integer -(253 - 1)
+- POSITIVE_INFINITY:	Infinity (returned on overflow)
+- NEGATIVE_INFINITY:	Negative infinity (returned on overflow)
+- NaN:	A "Not-a-Number" value
 
 # JavaScript Arrays
 
