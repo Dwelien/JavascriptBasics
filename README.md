@@ -637,35 +637,192 @@ The global method String() can convert dates to strings.
 # JavaScript Bitwise Operations
 
 # JavaScript Regular Expressions
-
+- A regular expression is a sequence of characters that forms a search pattern.
+- The search pattern can be used for text search and text replace operations.
+- A regular expression is a sequence of characters that forms a search pattern.
+- The search() method uses an expression to search for a match, and returns the position of the match.
+- The replace() method returns a modified string where the pattern is replaced.
+- The search() method searches a string for a specified value and returns the position of the match
+- Modifiers can be used to perform case-insensitive more global searches
+- Brackets are used to find a range of characters
+- The test() method is a RegExp expression method.
+- It searches a string for a pattern, and returns true or false, depending on the result.
+- The exec() method is a RegExp expression method.
+- It searches a string for a specified pattern, and returns the found text as an object.
+- If no match is found, it returns an empty (null) object.
 # JavaScript Operator Precedence
-
+- Operator precedence describes the order in which operations are performed in an arithmetic expression.
+- Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).
+- 
 # JavaScript Errors
-
+- The try statement defines a code block to run (to try).
+- The catch statement defines a code block to handle any error.
+- The finally statement defines a code block to run regardless of the result.
+- The throw statement defines a custom error.
+- The try statement allows you to define a block of code to be tested for errors while it is being executed.
+- The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+- The JavaScript statements try and catch come in pairs
+- JavaScript will actually create an Error object with two properties: name and message.
+- The throw statement allows you to create a custom error.
+- Technically you can throw an exception (throw an error).
+- The exception can be a JavaScript String, a Number, a Boolean or an Object
+- The exception (err) is caught by the catch statement and a custom error message is displayed
+- The finally statement lets you execute code, after try and catch, regardless of the result
+- A RangeError is thrown if you use a number that is outside the range of legal values.
+- A ReferenceError is thrown if you use (reference) a variable that has not been declared
+- A TypeError is thrown if an operand or argument is incompatible with the type expected by an operator or function
+- A URIError is thrown if you use illegal characters in a URI function
+- 
 # JavaScript Scope
-
+- Scope determines the accessibility (visibility) of variables.
+- JavaScript variables have 3 types of scope:
+Block scope
+Function scope
+Global scope
+- JavaScript variables had only Global Scope and Function Scope.
+- ES6 introduced two important new JavaScript keywords: let and const.
+- These two keywords provide Block Scope in JavaScript.
+- Variables declared inside a { } block cannot be accessed from outside the block
+- Variables declared with the var keyword can NOT have block scope.
+- Variables declared inside a { } block can be accessed from outside the block
+- Variables declared within a JavaScript function, are LOCAL to the function
+- Local variables have Function Scope:
+- They can only be accessed from within the function.
+- Variables defined inside a function are not accessible (visible) from outside the function.
+- Variables declared with var, let and const are quite similar when declared inside a function.
+- A variable declared outside a function, becomes GLOBAL.
+- Variables declared Globally (outside any function) have Global Scope.
+- Global variables can be accessed from anywhere in a JavaScript program.
+- Variables declared with var, let and const are quite similar when declared outside a block.
+- In "Strict Mode", undeclared variables are not automatically global.
+- Global variables defined with the let keyword do not belong to the window object
+- The lifetime of a JavaScript variable starts when it is declared.
+- Function (local) variables are deleted when the function is completed.
+- Function arguments (parameters) work as local variables inside functions.
 # JavaScript Hoisting
+-  Variables defined with let and const are hoisted to the top of the block, but not initialized.
+-  Using a let variable before it is declared will result in a ReferenceError.
+-  The variable is in a "temporal dead zone" from the start of the block until it is declared
+-  JavaScript only hoists declarations, not initializations
 
+-  
 # JavaScript Use Strict
+-  "use strict"; Defines that JavaScript code should be executed in "strict mode"
+-  The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+- Strict mode is declared by adding "use strict"; to the beginning of a script or a function.
+- Declared at the beginning of a script, it has global scope (all code in the script will execute in strict mode)
+- purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+- Strict mode is declared by adding "use strict"; to the beginning of a script or a function.
+- Declared at the beginning of a script, it has global scope (all code in the script will execute in strict mode)
+- Strict mode makes it easier to write "secure" JavaScript.
+- Strict mode changes previously accepted "bad syntax" into real errors.
+- Using an object, without declaring it, is not allowed
+- Deleting a variable (or object) is not allowed.
+- Deleting a function is not allowed.
+- Duplicating a parameter name is not allowed
+- Octal numeric literals are not allowed
+- Octal escape characters are not allowed
 
 # The JavaScript this Keyword
-
+-  In JavaScript, the this keyword refers to an object.
+-  Which object depends on how this is being invoked (used or called).
+-  The this keyword refers to different objects depending on how it is used
+-  In JavaScript, the this keyword refers to an object.
+-  Which object depends on how this is being invoked (used or called).
+-  The this keyword refers to different objects depending on how it is used
+-  When used in an object method, this refers to the object.
+-  In the example on top of this page, this refers to the person object.
+-  Because the fullName method is a method of the person object.
+-  When used alone, this refers to the global object.
+-  Because this is running in the global scope.
+-  In a browser window the global object is [object Window]
+-  when used in a function, in strict mode, this is undefined
+-  this refers to the HTML element that received the event
+-  The call() and apply() methods are predefined JavaScript methods.
+-  They can both be used to call an object method with another object as argument
+-  With the bind() method, an object can borrow a method from another object.
+-  
 # JavaScript Arrow Function
-
+- Arrow functions allow us to write shorter function syntax
+- The handling of this is also different in arrow functions compared to regular functions.
+- In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever.
+- With arrow functions the this keyword always represents the object that defined the arrow function.
 # JavaScript Classes
-
+- Use the keyword class to create a class.
+- Always add a method named constructor().
+- A JavaScript class is not an object.
+- It is a template for JavaScript objects.
+- The constructor method is a special method:
+- It has to have the exact name "constructor"
+- It is executed automatically when a new object is created
+- It is used to initialize object properties
+- Use the keyword class to create a class.
+- Always add a constructor() method.
 # JavaScript Modules
+- JavaScript modules allow you to break up your code into separate files.
+- Modules are imported from external files with the import statement.
+- Modules with functions or variables can be stored in any external file.
+- There are two types of exports: Named Exports and Default Exports.
+- You can import modules into a file in two ways, based on if they are named exports or default exports.
+- Named exports are constructed using curly braces. Default exports are not.
 
 # JavaScript JSON
-
+- JSON is a format for storing and transporting data.
+- JSON is often used when data is sent from a server to a web page.
+- JSON stands for JavaScript Object Notation
+- JSON is a lightweight data interchange format
+- JSON is language independent *
+- JSON is "self-describing" and easy to understand
+- The JSON format is syntactically identical to the code for creating JavaScript objects.
+- JSON data is written as name/value pairs, just like JavaScript object properties
+- A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value
+- JSON objects are written inside curly braces.
+- JSON arrays are written inside square brackets.
+- A common use of JSON is to read data from a web server, and display the data in a web page.
+- 
 # JavaScript Debugging
-
+- Programming code might contain syntax errors, or logical errors.
+- Many of these errors are difficult to diagnose.
+- Searching for (and fixing) errors in programming code is called code debugging.
+- Built-in debuggers can be turned on and off, forcing errors to be reported to the user.
+- If your browser supports debugging, you can use console.log() to display JavaScript values in the debugger window.
+- Setting Breakpoints
+- The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function.
+- This has the same function as setting a breakpoint in the debugger.
+- Normally, you activate debugging in your browser with F12, and select "Console" in the debugger menu.
 # JavaScript Style Guide
-
+- Coding conventions are style guidelines for programming. They typically cover:
+- Naming and declaration rules for variables and functions.
+- Rules for the use of white space, indentation, and comments.
+- Programming practices and principles.
+- Coding conventions secure quality:
+Improve code readability
+Make code maintenance easier
+- 
 # JavaScript Best Practices
-
+- Minimize the use of global variables.
+- This includes all data types, objects, and functions.
+- Global variables and functions can be overwritten by other scripts.
+- All variables used in a function should be declared as local variables.
+- Local variables must be declared with the var, the let, or the const keyword, otherwise they will become global variables.
 # JavaScript Common Mistakes
-
+- Accidentally Using the Assignment Operator
+- Expecting Loose Comparison
+- Confusing Addition & Concatenation
+- Misunderstanding Floats
+- Breaking a JavaScript String
+- Misplacing Semicolon
+- Breaking a Return Statement
+  
 # JavaScript Performance
-
+- Reduce Activity in Loops
+- Reduce DOM Access
+- Reduce DOM Size
+- Avoid Unnecessary Variables
+- Delay JavaScript Loading
+- Avoid Using with
+  
 # JavaScript Reserved Words
+- In JavaScript you cannot use the reserved words as variables, labels, or function names
+- JavaScript is often used together with Java. You should avoid using some Java objects and properties as JavaScript identifiers
+- avoid using the name of all HTML event handlers.
