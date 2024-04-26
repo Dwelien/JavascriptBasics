@@ -252,9 +252,15 @@ valueOf():	Returns a number as a number
 - NaN:	A "Not-a-Number" value
 
 # JavaScript Arrays
-
+- An array is a special variable, which can hold more than one value
+- 
 # JavaScript Array Methods
-
+- Array length: The length property returns the length (size) of an array
+- Array toString(): The JavaScript method toString() converts an array to a string of (comma separated) array values.
+- Array at(): The at() method returns an indexed element from an array
+- Array join(): The join() method also joins all array elements into a string. It behaves just like toString(), but in addition you can specify the separator
+- Array pop(): The pop() method removes the last element from an array
+- Array push(): The push() method adds a new element to an array (at the end)
 # JavaScript Array Search
 
 # JavaScript Sorting Arrays
