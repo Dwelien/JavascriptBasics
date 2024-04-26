@@ -261,13 +261,59 @@ valueOf():	Returns a number as a number
 - Array join(): The join() method also joins all array elements into a string. It behaves just like toString(), but in addition you can specify the separator
 - Array pop(): The pop() method removes the last element from an array
 - Array push(): The push() method adds a new element to an array (at the end)
+- The shift() method removes the first array element and "shifts" all other elements to a lower index.
+- The shift() method returns the value that was "shifted out"
+- The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements
+- The length property provides an easy way to append a new element to an array
+- The concat() method creates a new array by merging (concatenating) existing arrays
+- The concat() method can also take strings as arguments
+- The copyWithin() method copies array elements to another position in an array
+- Flattening an array is the process of reducing the dimensionality of an array.
+- Flattening is useful when you want to convert a multi-dimensional array into a one-dimensional array.
+- The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+- The splice() method adds new items to an array.
+- The slice() method slices out a piece of an array.
+- The splice() method can be used to add new items to an arrayThe splice() method can be used to add new items to an array
+- The slice() method slices out a piece of an array into a new array
+- JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
+
+
 # JavaScript Array Search
-
+- Array indexOf(): The indexOf() method searches an array for an element value and returns its position.
+- Array lastIndexOf(): Array.lastIndexOf() is the same as Array.indexOf(), but returns the position of the last occurrence of the specified element.
+- Array includes(): This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+- The find() method returns the value of the first array element that passes a test function.
+- The findIndex() method returns the index of the first array element that passes a test function.
+- findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition.
+- The findLastIndex() method finds the index of the last element that satisfies a condition.
+- 
 # JavaScript Sorting Arrays
+- Array sort(): The sort() method sorts an array alphabetically
+- Array reverse(): The reverse() method reverses the elements in an array
+- Array toSorted(): creates a new array, keeping the original array unchanged
+- Array toReversed(): creates a new array, keeping the original array unchanged
+- Sorting Objects
 
+- 
 # JavaScript Array Iteration
-
+- Array forEach: The forEach() method calls a function (a callback function) once for each array element.
+- Array map(): The map() method creates a new array by performing a function on each array element. The map() method does not execute the function for array elements without values.The map() method does not change the original array.
+- Array flatMap(): The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
+- Array filter(): The filter() method creates a new array with array elements that pass a test.
+- Array reduce(): The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+- Array reduceRight(): The reduceRight() method runs a function on each array element to produce (reduce it to) a single value.
+- The every() method checks if all array values pass a test.
+- The some() method checks if some array values pass a test.
+- The Array.from() method returns an Array object from any object with a length property or any iterable object.
+- The Array.keys() method returns an Array Iterator object with the keys of an array.
+- 
 # JavaScript Array Const
+- An array declared with const cannot be reassigned
+- The keyword const is a little misleading.
+- # Const Block Scope
+   - An array declared with const has Block Scope.
+ 
+   - 
 
 # JavaScript Date Objects
 
