@@ -113,11 +113,37 @@
   
 
 # JavaScript Data Types
-
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object - an object, an array, a date
 # JavaScript Functions
+- block of code to perform a particular task
+- executed when called
+- syntax: function functionName(){}
+- parameters, arguments: values recieved when being invoked
+- 
+- 
+# JavaScript Objects
+- written with curly braces
+- name: value
+
+  - a variable without value: undefined (type is also undefined)
+  - empty string has both a legal value and a type
+
+ - The () Operator: invokes the function.
+ - local variable: inside the function()
+ - global variable: outside the function()
 
 # JavaScript Objects
-
+- const objectName = {property1: value1, property2: value2, property3: value3, property4: value4 .....}
+- objectName.property1
+- objectName[property1]
+- 
 # JavaScript Events
 
 # JavaScript Strings
